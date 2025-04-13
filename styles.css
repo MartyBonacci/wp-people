@@ -1,0 +1,106 @@
+/* General Styles */
+body.person-archive, body.single-person {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Archive Page Styles */
+.person-archive .person-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.person-archive .person-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.person-archive .person-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.person-archive .person-details {
+    padding: 15px;
+}
+
+.person-archive .person-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.person-archive .person-bio {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Single Person Page Styles */
+.person-single {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.person-single .person-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.person-single .person-name {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.person-single .person-contact {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.person-single .person-contact li {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.person-single .person-bio {
+    font-size: 1em;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .person-archive .person-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .person-archive .person-item {
+        width: 90%;
+    }
+
+    .person-single {
+        padding: 15px;
+    }
+}
